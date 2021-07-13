@@ -56,3 +56,5 @@ class TaskDeleteView(UserPassesTestMixin,LoginRequiredMixin,DeleteView):
         if self.request.user == task.author:
             return True
         return False
+
+
